@@ -6,5 +6,6 @@ Code for the implementation of the EMbru method, presented in the article “EMb
 - run_EMbru.R : This is the main script for estimating the parameters of the Hawkes process using the Bayesian EMbru approach. It involves two stages:
   
   ⁃ Stage 1 (EM method): implemented in code_em_stage1.R, which includes the necessary functions for the Expectation-Maximisation procedure.
+  
   ⁃ Stage 2 (inlabru): implemented in code_inla_stage2.R, which uses the inlabru package to perform inference based on the output from Stage 1.
 
