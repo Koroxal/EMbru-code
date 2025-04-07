@@ -174,7 +174,7 @@ pp <- generate(lam, T = c(0, 100), S = matrix(c(0, 1, 0, 1), ncol = 2, byrow = T
 
 
 # We display the data
-data <- as.data.frame(pp$data[1,,])
+data <- as.data.frame(pp$data[1,,]) # 1 is the index of the simulated dataset. If we had more datasets, this number should be changed accordingly.
 colnames(data) <- c("times", "x", "y")
 data <- data %>% filter(times!=0)
 summary(data)
@@ -182,7 +182,7 @@ summary(data)
 # Plot data
 ggplot() +
   geom_point(data = data, aes(x = x, y = y, color = times)) +
-  scale_color_gradient(name = "time", breaks = c(1, 25, 50, 75, 100), low = "#132B43", high = "#56B1F7") +
+  scale_color_gradient(name = "time", breaks = c(0, 25, 50, 75, 100), low = "#56B1F7", high = "#132B43") +
   new_scale_color() +
   labs(x = "x", y = "y") + annotate("text", x = 0.2, y = -.05, label = paste("N=",dim(data)[1], sep=""), size = 3, color = "black")+lims(x = c(0, 1), y=c(-0.05, 1))
 
