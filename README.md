@@ -11,4 +11,4 @@ Code for the implementation of the EMbru method, presented in the article “EMb
   
   ⁃ Stage 2 (inlabru): implemented in "code_inla_stage2.R", which provides the functions required to perform inference with inlabru, based on the output from Stage 1. 
   
-- "compute_hessian_standard_errors.R" contains the code to compute the Hessian and standard errors from both stages of EMbru. To run it, the objects resultado_em from stage 1 of EMbru and fit_inlabru from stage 2 of EMbru are required.
+- "compute_hessian_standard_errors.R" contains the code to compute the Hessian and standard errors from both stages of EMbru. To run it, the objects resultado_em from stage 1 of EMbru and fit_inlabru from stage 2 of EMbru are required (They can be requested from the author at bernabeu@uji.es).
