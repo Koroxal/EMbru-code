@@ -76,7 +76,7 @@ segunda_derivada_parametro <- function(f, params, p, T, domain_area, link.f.be, 
 load("synthetic_data.RData")
 
 # Result from Bayes EM (stage 1 of EMbru)
-# object resultado_em from script run_EMbru.R
+# Required object `resultado_em` from the script run_EMbru.R
 result_em <- resultado_em$result
 param <- resultado_em$param
 
@@ -120,7 +120,7 @@ sqrt(diag(inv_Hessian_EM))
 
 ################################################################################
 
-# object fit_inlabru from script run_EMbru.R
+# Required object `fit_inlabru` from the script run_EMbru.R
 Hessian_EMbru <- fit_inlabru$misc$configs$config[[1]]$Q
 inv_Hessian_EMbru <- fit_inlabru$misc$configs$config[[1]]$Qinv
 sqrt(diag(inv_Hessian_EMbru))
